@@ -115,6 +115,10 @@ h3 {
   width: 120px;
   height: 120px;
 }
+.boss .avatar {
+  width: 160px;
+  height: 160px;
+}
 .intro a {
   color: white;
 }
@@ -151,6 +155,21 @@ h3 {
   color: white;
   text-shadow: 0 0 24px #79f, 0 0 12px #79f;
 }
+@media only screen and (max-width : 979px) and (min-width : 481px) {
+.t-lp, .t-fd {
+  text-align: right;
+}
+.t-ld, .t-bd {
+  text-align: left;
+}
+}
+.intro a {
+  text-align: center;
+}
+.intro .person {
+  display: inline-block;
+  text-align: center;
+}
 
 </style>
 
@@ -168,32 +187,52 @@ h3 {
 <div class="intro-out"><div class="intro container">
   <h1>Our Team</h1>
   <div class="row">
-    <div class="col-md-2 col-md-offset-2 col-sm-6">
-    <a target="_blank" href="http://zbigniewoczkowicz.com/">
-      <img class="avatar" src="https://lh3.googleusercontent.com/-lcehht8a-UU/AAAAAAAAAAI/AAAAAAAAFOU/FftKnE0bFZA/s120-p-rw-no/photo.jpg" width="120" height="120">
-      <div class="name">Zbigniew</div>
-      <div class="job">Lead Photographer</div>
+    <div class="col-sm-8 col-sm-offset-2 t-b">
+    <a class="boss" target="_blank" href="https://twitter.com/dwukwiatona">
+      <div class="person">
+      <!-- <img class="avatar" src="https://lh3.googleusercontent.com/-m_RVkxYdtOA/AAAAAAAAAAI/AAAAAAAAA0U/oH9O3iZc2ts/s120-p-rw-no/photo.jpg"> -->
+      <img class="avatar" src="https://twitter.com/dwukwiatona/profile_image?size=original">
+      <div class="name">Kasia</div>
+      <div class="job">Boss</div>
+      </div>
     </a>
     </div>
-    <div class="col-md-2 col-sm-6">
+  </div>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-2 col-xs-6 t-lp">
+    <a target="_blank" href="http://zbigniewoczkowicz.com/">
+      <div class="person">
+      <img class="avatar" src="https://lh3.googleusercontent.com/-lcehht8a-UU/AAAAAAAAAAI/AAAAAAAAFOU/FftKnE0bFZA/s120-p-rw-no/photo.jpg">
+      <div class="name">Zbigniew</div>
+      <div class="job">Lead Photographer</div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-2 col-xs-6 t-ld">
     <a target="_blank" href="https://github.com/OliwiaOczk">
+      <div class="person">
       <img class="avatar" src="https://github.com/OliwiaOczk.png">
       <div class="name">Oliwia</div>
       <div class="job">Lead Designer</div>
+      </div>
     </a>
     </div>
-    <div class="col-md-2 col-sm-6">
+    <div class="col-md-2 col-xs-6 t-fd">
     <a target="_blank" href="https://github.com/IgorOczk">
+      <div class="person">
       <img class="avatar" src="https://github.com/IgorOczk.png">
       <div class="name">Igor</div>
       <div class="job">Frontend Developer</div>
+      </div>
     </a>
     </div>
-    <div class="col-md-2 col-sm-6">
+    <div class="col-md-2 col-xs-6 t-bd">
     <a target="_blank" href="http://pocztarski.com/">
+      <div class="person">
       <img class="avatar" src="https://github.com/rsp.png">
       <div class="name">Rafał</div>
       <div class="job">Backend Developer</div>
+      </div>
     </a>
     </div>
   </div>
